@@ -3,119 +3,541 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CommsPartner</title>
-<meta name="description" content="We offer a range of services helping Govt, Businesses, and Consumers to Buy, Sell and Trade in IT, Communications, and Tech Assets.">
-<meta property="og:title" content="CommsPartner">
-<meta property="og:description" content="We offer a range of services helping Govt, Businesses, and Consumers to Buy, Sell and Trade in IT, Communications, and Tech Assets.">
+<title>CommsPartner | Melbourne advisory and investment group</title>
+<meta name="description" content="CommsPartner is a Melbourne advisory and investment group, founded in 2006, helping businesses buy, sell, reuse and grow in Australia and into new markets.">
+<link rel="canonical" href="https://commspartner.com/">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="CommsPartner">
+<meta property="og:title" content="CommsPartner | Hindsight that becomes your foresight">
+<meta property="og:description" content="A Melbourne advisory and investment group helping businesses buy, sell, reuse and grow, in Australia and into new markets. Since 2006.">
 <meta property="og:url" content="https://commspartner.com/">
 <meta property="og:image" content="https://commspartner.com/commspartner-logo.png">
 <meta property="og:locale" content="en_AU">
-<link rel="canonical" href="https://commspartner.com/">
-<link rel="icon" href="favicon-32.png" sizes="32x32">
-<link rel="icon" href="favicon-192.png" sizes="192x192">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#142433">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="favicon-192.png" sizes="192x192" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--ink:#1d1d1f;--muted:#55595f;--line:#e4e5e8;--bg:#ffffff;--soft:#f6f7f8;
---gold:#e1a100;--green:#87ab41;--berry:#a04e5a;--teal:#439eb1}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 Arial,Helvetica,sans-serif}
-a{color:#2c6f80}
-.wrap{max-width:980px;margin:0 auto;padding:0 20px}
-header{border-bottom:1px solid var(--line);background:#fff;position:sticky;top:0;z-index:5}
-header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:14px;padding-bottom:14px}
-header img{height:38px;width:auto;display:block}
-nav a{color:var(--ink);text-decoration:none;font-size:15px;margin-left:18px}
-nav a:hover{color:var(--teal)}
-.bar{display:flex;height:6px}.bar span{flex:1}
-.hero{padding:64px 0 48px;background:var(--soft)}
-.hero h1{font-size:clamp(24px,3.4vw,34px);line-height:1.3;margin:0 0 18px;max-width:880px}
-.hero p{font-size:18px;color:var(--muted);margin:0;max-width:840px}
-section{padding:56px 0;border-top:1px solid var(--line);scroll-margin-top:64px}
-h2{font-size:28px;margin:0 0 6px}
-h3{font-size:20px;margin:26px 0 10px}
-.kicker{display:inline-block;width:44px;height:5px;background:var(--gold);margin-bottom:14px}
-#itad .kicker{background:var(--teal)}#contact-us .kicker{background:var(--berry)}
-.intoau{margin:6px 0 18px;color:#5b8fd6;line-height:1}.intoau .io{display:block;font:italic 52px 'Segoe Script','Brush Script MT','Comic Sans MS',cursive;padding-left:8px}.intoau .tg{display:block;font-size:16px;color:#8fb0e0;padding-left:110px;margin-top:4px}@media (max-width:640px){.intoau .io{font-size:40px}.intoau .tg{padding-left:60px}}
-ul.ticks{list-style:none;padding:0;margin:14px 0;columns:2;column-gap:36px}
-ul.ticks li{break-inside:avoid;padding:4px 0 4px 22px;position:relative}
-ul.ticks li::before{content:"";position:absolute;left:0;top:13px;width:10px;height:10px;background:var(--green)}
-#itad ul.ticks li::before{background:var(--teal)}
-.contact{display:grid;gap:10px;font-size:19px}
-.contact a{text-decoration:none;color:var(--ink);font-weight:bold}
-footer{background:#1d1d1f;color:#c9cbcf;font-size:14px;padding:22px 0}
-@media (max-width:640px){nav{display:none}ul.ticks{columns:1}.hero{padding:44px 0 34px}section{padding:40px 0}header img{height:30px}}
+:root{
+  --navy:#142433;--navy-2:#0e1a25;--navy-3:#1c3244;
+  --paper:#F5F3EE;--white:#ffffff;--slate:#4A5A63;--ink:#142433;
+  --line:#e3dfd5;--line-dark:#2a3f51;
+  --brass:#b8892b;--brass-text:#7d5f14;
+  --on-navy:#F5F3EE;--on-navy-muted:#b9c3ca;
+  --gold:#e1a100;--green:#87ab41;--berry:#a04e5a;--teal:#439eb1;
+  --max:1120px;--gutter:24px;--radius:6px;
+  --serif:'Fraunces',Georgia,'Times New Roman',serif;
+  --sans:'Inter',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--paper);color:var(--slate);font:400 17px/1.65 var(--sans);overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+h1,h2,h3{font-family:var(--serif);color:var(--ink);font-weight:500;letter-spacing:-.01em;margin:0}
+p{margin:0 0 1em}
+a{color:var(--ink)}
+:focus-visible{outline:3px solid var(--teal);outline-offset:3px;border-radius:2px}
+.on-navy :focus-visible{outline-color:var(--gold)}
+.skip{position:absolute;left:-9999px;top:8px;background:var(--navy);color:var(--on-navy);padding:10px 16px;z-index:50;text-decoration:none;border-radius:var(--radius)}
+.skip:focus{left:16px}
+.nw{white-space:nowrap}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gutter)}
+section{scroll-margin-top:84px}
+
+/* Eyebrow labels */
+.eyebrow{display:flex;align-items:center;gap:12px;font:600 13px/1.2 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--brass-text);margin:0 0 18px}
+.eyebrow::before{content:"";width:28px;height:2px;background:var(--brass);flex:none}
+.on-navy .eyebrow{color:var(--gold)}
+.on-navy .eyebrow::before{background:var(--gold)}
+.section-head{max-width:720px;margin-bottom:48px}
+.section-head h2{font-size:clamp(30px,3.6vw,44px);line-height:1.12}
+.section-head p{font-size:18px;margin:16px 0 0}
+
+/* Header */
+.site-header{position:sticky;top:0;z-index:20;background:var(--white);box-shadow:0 1px 0 rgba(20,36,51,.06)}
+.site-header .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:74px}
+.brand{display:block;flex:none}
+.brand img{height:30px;width:auto}
+.nav-list{display:flex;gap:28px;list-style:none;margin:0;padding:0}
+.nav-list a{color:var(--ink);text-decoration:none;font-size:15px;font-weight:500;padding:6px 0;border-bottom:2px solid transparent}
+.nav-list a:hover{border-bottom-color:var(--brass)}
+.nav-toggle{display:none}
+.stripe{display:flex;height:4px}
+.stripe span{flex:1}
+.s-gold{background:var(--gold)}.s-green{background:var(--green)}.s-berry{background:var(--berry)}.s-teal{background:var(--teal)}
+
+/* Buttons */
+.btns{display:flex;flex-wrap:wrap;gap:14px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:0 26px;border-radius:var(--radius);font:600 16px/1 var(--sans);text-decoration:none;transition:background-color .15s,color .15s,border-color .15s}
+.btn-primary{background:var(--gold);color:var(--navy);border:2px solid var(--gold)}
+.btn-primary:hover{background:#f0b519;border-color:#f0b519}
+.btn-ghost{color:var(--on-navy);border:2px solid rgba(245,243,238,.45)}
+.btn-ghost:hover{border-color:var(--on-navy);background:rgba(245,243,238,.06)}
+.btn-dark{background:var(--navy);color:var(--on-navy);border:2px solid var(--navy)}
+.btn-dark:hover{background:var(--navy-3)}
+
+/* Hero */
+.hero{background:var(--navy);color:var(--on-navy-muted);padding:104px 0 112px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-180px;top:-180px;width:560px;height:560px;border-radius:50%;border:1px solid rgba(245,243,238,.07);box-shadow:0 0 0 80px rgba(245,243,238,.02),0 0 0 160px rgba(245,243,238,.015);pointer-events:none}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(0,1fr);gap:72px;align-items:center;position:relative;z-index:1}
+.hero h1{color:var(--on-navy);font-size:clamp(40px,6vw,74px);line-height:1.04;font-weight:400;letter-spacing:-.02em}
+.hero h1 em{font-style:italic;color:#f3c85a}
+.hero .lead{font-size:clamp(18px,1.6vw,21px);line-height:1.6;color:var(--on-navy-muted);max-width:600px;margin:28px 0 40px}
+.hero-card{border:1px solid var(--line-dark);background:rgba(255,255,255,.03);border-radius:var(--radius);padding:36px 34px}
+.squares{display:grid;grid-template-columns:repeat(2,12px);gap:3px;margin-bottom:26px}
+.squares span{width:12px;height:12px}
+.hero-card blockquote{margin:0;font:400 italic 26px/1.35 var(--serif);color:var(--on-navy)}
+.hero-card .who{margin:22px 0 0;font-size:14px;letter-spacing:.04em;color:var(--on-navy-muted)}
+.hero-card .who strong{color:var(--on-navy);font-weight:600}
+.hero-card dl{margin:28px 0 0;padding-top:24px;border-top:1px solid var(--line-dark);display:grid;grid-template-columns:auto 1fr;gap:10px 18px;font-size:14px}
+.hero-card dt{color:var(--gold);font-weight:600;letter-spacing:.06em;text-transform:uppercase;font-size:12px;padding-top:2px}
+.hero-card dd{margin:0;color:var(--on-navy-muted)}
+
+/* Proof bar */
+.proof{background:var(--white);padding:88px 0}
+.proof-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1.45fr) minmax(0,1fr);border-top:1px solid var(--line)}
+.stat{padding:32px 28px 8px 0;border-right:1px solid var(--line);margin-right:28px}
+.stat:last-child{border-right:0;margin-right:0}
+.stat .num{font:400 clamp(30px,3.1vw,42px)/1.05 var(--serif);color:var(--ink);letter-spacing:-.02em;display:block;margin-bottom:14px;white-space:nowrap}
+.stat .num::before{content:"";display:block;width:24px;height:3px;margin-bottom:22px;background:var(--c,var(--gold))}
+.stat p{margin:0;font-size:15.5px;line-height:1.55}
+
+/* Services */
+.services{padding:112px 0}
+.card-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.card{background:var(--white);border-radius:var(--radius);padding:34px 30px 32px;border-top:4px solid var(--c,var(--gold));box-shadow:0 1px 2px rgba(20,36,51,.05),0 8px 24px -12px rgba(20,36,51,.12);display:flex;flex-direction:column}
+.card .idx{font:500 14px/1 var(--sans);color:var(--slate);letter-spacing:.08em;margin-bottom:22px}
+.card h3{font-size:23px;line-height:1.22;margin-bottom:14px}
+.card p{font-size:16px;line-height:1.62;margin:0}
+.card p + p{margin-top:10px}
+.card .quote{font-family:var(--serif);font-style:italic;color:var(--ink)}
+.c-gold{--c:var(--gold)}.c-green{--c:var(--green)}.c-berry{--c:var(--berry)}.c-teal{--c:var(--teal)}
+
+/* How we work */
+.how{background:var(--white);padding:112px 0}
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px;counter-reset:step;position:relative}
+.steps::before{content:"";position:absolute;left:28px;right:calc(25% - 28px);top:28px;height:2px;background:linear-gradient(90deg,var(--gold),var(--green),var(--berry),var(--teal))}
+.step{position:relative;counter-increment:step}
+.step .dot{width:56px;height:56px;border-radius:50%;background:var(--white);border:2px solid var(--c);display:grid;place-items:center;font:500 20px/1 var(--serif);color:var(--ink);position:relative;z-index:1;margin-bottom:26px}
+.step h3{font-size:22px;line-height:1.25;margin-bottom:8px}
+.step p{margin:0;font-size:16px}
+
+/* Founder */
+.founder{padding:112px 0}
+.founder-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:72px;align-items:start}
+.photo{position:relative;position:sticky;top:112px}
+.photo-frame{aspect-ratio:4/5;border-radius:var(--radius);background:
+  linear-gradient(160deg,#e9e5dc 0%,#dcd6ca 100%);border:1px solid #d3cdc0;display:flex;align-items:flex-end;justify-content:center;padding:24px;position:relative;overflow:hidden}
+.photo-frame::before{content:"";position:absolute;left:50%;top:22%;width:34%;aspect-ratio:1;border-radius:50%;transform:translateX(-50%);background:rgba(20,36,51,.07)}
+.photo-frame::after{content:"";position:absolute;left:50%;bottom:-8%;width:74%;height:42%;border-radius:50% 50% 0 0;transform:translateX(-50%);background:rgba(20,36,51,.07)}
+.photo-frame figcaption{position:relative;z-index:1;font-size:13px;letter-spacing:.04em;color:var(--slate);background:rgba(255,255,255,.75);padding:6px 12px;border-radius:3px}
+.photo .squares{position:absolute;right:-12px;bottom:-12px;margin:0;grid-template-columns:repeat(2,18px)}
+.photo .squares span{width:18px;height:18px}
+.founder h2{font-size:clamp(30px,3.6vw,44px);line-height:1.12;margin-bottom:8px}
+.founder .role{font-size:16px;color:var(--brass-text);font-weight:600;letter-spacing:.02em;margin-bottom:28px}
+.founder .bio p{font-size:17px}
+.pull{margin:36px 0 36px;padding:6px 0 6px 28px;border-left:3px solid var(--brass)}
+.pull p{font:400 italic clamp(21px,2.1vw,26px)/1.4 var(--serif);color:var(--ink);margin:0}
+.pull cite{display:block;margin-top:12px;font:500 14px/1.4 var(--sans);font-style:normal;color:var(--slate);letter-spacing:.04em}
+.creds{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.creds li{background:var(--white);border-radius:var(--radius);padding:18px 20px;font-size:15px;line-height:1.5;border-left:3px solid var(--c)}
+.creds strong{display:block;color:var(--ink);font-weight:600;margin-bottom:2px}
+
+/* Ethos */
+.ethos{background:var(--navy);padding:104px 0;color:var(--on-navy-muted);position:relative}
+.ethos-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:72px;align-items:end}
+.ethos h2{color:var(--on-navy);font-size:clamp(34px,4.6vw,58px);line-height:1.08;font-weight:400}
+.ethos p{font-size:18px;line-height:1.7;margin:0}
+.ethos p + p{margin-top:16px}
+.ethos .jp{color:var(--on-navy);font-family:var(--serif);font-style:italic}
+
+/* Brands */
+.brands{background:var(--white);padding:112px 0 96px}
+.brand-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.brand-card{display:flex;flex-direction:column;justify-content:space-between;gap:36px;min-height:240px;padding:36px 36px 32px;border-radius:var(--radius);background:var(--paper);border:1px solid var(--line);text-decoration:none;color:var(--slate);position:relative;transition:border-color .15s,transform .15s,box-shadow .15s}
+.brand-card::before{content:"";position:absolute;left:36px;top:0;width:48px;height:4px;background:var(--c)}
+.brand-card:hover{border-color:#cfc8b8;transform:translateY(-2px);box-shadow:0 14px 30px -18px rgba(20,36,51,.3)}
+.brand-card h3{font-size:clamp(26px,2.6vw,32px);line-height:1.15;margin-bottom:12px}
+.brand-card p{margin:0;font-size:17px}
+.brand-card .go{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:20px;border-top:1px solid var(--line);font-size:15px;font-weight:600;color:var(--ink)}
+.brand-card .go span[aria-hidden]{font-size:20px;transition:transform .15s}
+.brand-card:hover .go span[aria-hidden]{transform:translateX(4px)}
+.more{margin:28px 0 0;font-size:15px;color:var(--slate)}
+
+/* Media */
+.media{padding:96px 0}
+.media-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.media-card{background:transparent;border-top:1px solid #cfc8b8;padding:26px 0 0}
+.media-card .type{font:600 12px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--brass-text);margin-bottom:14px}
+.media-card h3{font-size:21px;line-height:1.3;margin-bottom:10px}
+.media-card p{font-size:15.5px;margin:0 0 14px}
+.media-card a.more-link{font-size:15px;font-weight:600;color:var(--ink);text-underline-offset:4px;text-decoration-thickness:1px}
+.media-card a.more-link:hover{text-decoration-thickness:2px}
+
+/* Contact */
+.contact{background:var(--navy);color:var(--on-navy-muted);padding:112px 0}
+.contact-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:72px;align-items:start}
+.contact h2{color:var(--on-navy);font-size:clamp(34px,4.4vw,54px);line-height:1.08;font-weight:400}
+.contact .lead{font-size:19px;margin:22px 0 36px;max-width:520px}
+.contact-list{list-style:none;margin:0;padding:0;border-top:1px solid var(--line-dark)}
+.contact-list li{padding:22px 0;border-bottom:1px solid var(--line-dark);display:grid;grid-template-columns:96px minmax(0,1fr);gap:16px;align-items:baseline}
+.contact-list .k{font:600 12px/1.4 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+.contact-list a,.contact-list .v{color:var(--on-navy);font-size:20px;text-decoration:none;overflow-wrap:anywhere}
+.contact-list a:hover{text-decoration:underline;text-underline-offset:5px}
+
+/* Footer */
+.site-footer{background:var(--navy-2);color:#9fadb7;font-size:14px;padding:28px 0}
+.site-footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.site-footer p{margin:0}
+.site-footer a{color:#c9d1d7}
+.site-footer .squares{margin:0}
+
+/* Tablet */
+@media (max-width:1000px){
+  .nav-list{gap:20px}
+  .hero-grid{grid-template-columns:1fr;gap:48px}
+  .hero-card{max-width:560px}
+  .card-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .proof-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .stat:nth-child(2){border-right:0;margin-right:0}
+  .stat:nth-child(n+3){border-top:1px solid var(--line);margin-top:24px}
+  .founder-grid{grid-template-columns:1fr;gap:56px}
+  .photo{max-width:380px;position:relative;top:auto}
+  .photo-frame{aspect-ratio:1/1}
+  .ethos-grid,.contact-grid{grid-template-columns:1fr;gap:32px}
+}
+
+/* Collapse nav into a menu */
+@media (max-width:900px){
+  .nav-toggle{display:block;position:relative}
+  .nav-toggle summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:10px;font:600 15px/1 var(--sans);color:var(--ink);padding:11px 14px;border:1px solid var(--line);border-radius:var(--radius)}
+  .nav-toggle summary::-webkit-details-marker{display:none}
+  .nav-toggle .bars{display:grid;gap:4px}
+  .nav-toggle .bars i{display:block;width:18px;height:2px;background:var(--ink)}
+  .nav-toggle[open] summary{background:var(--paper)}
+  .nav-toggle .nav-list{position:absolute;right:0;top:calc(100% + 10px);flex-direction:column;gap:0;background:var(--white);border:1px solid var(--line);border-radius:var(--radius);box-shadow:0 18px 40px -16px rgba(20,36,51,.35);min-width:220px;padding:8px 0}
+  .nav-toggle .nav-list a{display:block;padding:12px 20px;border-bottom:0}
+  .nav-toggle .nav-list a:hover{background:var(--paper)}
+  .nav-desktop{display:none}
+  .steps{grid-template-columns:1fr;gap:28px}
+  .steps::before{left:23px;right:auto;top:24px;bottom:24px;width:2px;height:auto;background:linear-gradient(180deg,var(--gold),var(--green),var(--berry),var(--teal))}
+  .step{display:grid;grid-template-columns:48px minmax(0,1fr);gap:18px;align-items:start}
+  .step .dot{width:48px;height:48px;font-size:18px;margin:0}
+  .step h3{font-size:20px;margin-top:10px}
+  .steps{max-width:560px}
+}
+
+/* Phone */
+@media (max-width:640px){
+  :root{--gutter:16px}
+  body{font-size:16px}
+  section{scroll-margin-top:72px}
+  .site-header .wrap{min-height:64px;gap:12px}
+  .brand img{height:22px}
+  .hero{padding:64px 0 72px}
+  .hero::after{display:none}
+  .hero .sep{display:none}
+  .hero .lead{margin:22px 0 32px}
+  .btns{flex-direction:column}
+  .btn{width:100%}
+  .hero-card{padding:28px 22px}
+  .hero-card blockquote{font-size:22px}
+  .proof,.services,.how,.founder,.ethos,.brands,.media,.contact{padding:72px 0}
+  .section-head{margin-bottom:36px}
+  .proof-grid{grid-template-columns:1fr}
+  .stat,.stat:nth-child(2){border-right:0;margin-right:0;padding:26px 0 22px;border-top:1px solid var(--line)}
+  .stat:first-child{border-top:0}
+  .stat:nth-child(n+3){margin-top:0}
+  .card-grid{grid-template-columns:1fr;gap:16px}
+  .card{padding:28px 22px}
+  .creds{grid-template-columns:1fr}
+  .photo .squares{right:-8px;bottom:-8px;grid-template-columns:repeat(2,14px)}
+  .photo .squares span{width:14px;height:14px}
+  .pull{padding-left:20px}
+  .brand-grid,.media-grid{grid-template-columns:1fr;gap:16px}
+  .brand-card{padding:30px 22px 24px;min-height:0}
+  .brand-card::before{left:22px}
+  .media-grid{gap:28px}
+  .contact-list li{grid-template-columns:1fr;gap:6px}
+  .contact-list a,.contact-list .v{font-size:18px}
+  .site-footer .wrap{flex-direction:column;align-items:flex-start}
+}
+.founder-solo{grid-template-columns:176px minmax(0,1fr);gap:48px;max-width:1040px}
+.passport{margin:8px 0 0;width:176px}
+.passport img{display:block;width:176px;height:220px;object-fit:cover;border-radius:6px;border:1px solid var(--line);background:#fff}
+@media (max-width:760px){.founder-solo{grid-template-columns:1fr;gap:24px}.passport{width:120px}.passport img{width:120px;height:150px}}
 </style>
 </head>
 <body>
-<header>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
   <div class="wrap">
-    <a href="https://commspartner.com/"><img src="commspartner-logo.png" alt="CommsPartner" width="317" height="38"></a>
-    <nav><a href="#about">Services &amp; Solutions</a><a href="#itad">ITAD &amp; ITAM</a><a href="#contact-us">Contact</a></nav>
+    <a class="brand" href="#top" aria-label="CommsPartner, back to top"><img src="commspartner-logo.png" alt="CommsPartner" width="634" height="76"></a>
+    <nav class="nav-desktop" aria-label="Main">
+      <ul class="nav-list">
+        <li><a href="#advisory">Advisory</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#how">How we work</a></li>
+        <li><a href="#founder">Founder</a></li>
+        <li><a href="#brands">Brands</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <details class="nav-toggle">
+      <summary aria-label="Menu"><span class="bars" aria-hidden="true"><i></i><i></i><i></i></span>Menu</summary>
+      <nav aria-label="Main (mobile)">
+        <ul class="nav-list">
+          <li><a href="#advisory">Advisory</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#how">How we work</a></li>
+          <li><a href="#founder">Founder</a></li>
+          <li><a href="#brands">Brands</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </details>
   </div>
-  <div class="bar"><span style="background:var(--gold)"></span><span style="background:var(--green)"></span><span style="background:var(--berry)"></span><span style="background:var(--teal)"></span></div>
+  <div class="stripe" aria-hidden="true"><span class="s-gold"></span><span class="s-green"></span><span class="s-berry"></span><span class="s-teal"></span></div>
 </header>
 
-<div class="hero">
-  <div class="wrap">
-    <h1>Helping Govt, Enterprise, Businesses, and Consumer Channels to Buy, Sell, Trade, ReUse, and Recycle IT, Communications, Tech, and Other Assets Sustainably in the Circular Economy.</h1>
-    <p>Multi-Sector Ambassadors to develop and deliver best-of-breed products, services, and programs to new territories through specific sales, marketing, operational, and support channels, project and program management, audits, and investigative reviews.</p>
-  </div>
-</div>
+<main id="main">
 
-<section id="about">
-  <div class="wrap">
-    <span class="kicker"></span>
-    <h2>Services &amp; Solutions</h2>
-    <h3>IntoAU.</h3>
-    <div class="intoau" role="img" aria-label="intoau — giving you access to new territories."><span class="io">“intoau”</span><span class="tg">giving you access to new territories.</span></div>
-    <p>CommsPartner can directly or through joint ventures, distribution agreements, and our valued partners, deliver best of breed Products, Services, and Solutions assisting organisations to enter into Australian markets “IntoAU”. Here are just some of those offered:</p>
-    <ul class="ticks">
-      <li>Territory &amp; Channel Management.</li>
-      <li>System Audits, Reviews, Reports, and Recommendations.</li>
-      <li>Process and Program, Profit &amp; Commercial Optimisation.</li>
-      <li>Design and delivery of Presentations and Events.</li>
-      <li>Attendance and Representations at Seminars and Trade Shows, Guest and Keynote Speaker provision.</li>
-      <li>Business / Personal Development and Mentoring.</li>
-      <li>Media Training.</li>
-      <li>Market Research.</li>
-    </ul>
-    <p>“IntoAU” is a bespoke service offered to meet your needs to explore new territories, growing markets, and sales revenue channels in Australia with low investment or risk yet high return on investment.</p>
-    <p>We offer a range of services from basic market analysis and research to full territory management, beta testing and product development, exhibition support, launch, and much more. For further information please contact us.</p>
+<!-- 2. Hero -->
+<section class="hero on-navy" id="top" aria-labelledby="hero-title">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow"><span>Melbourne advisory group <span class="nw"><span class="sep">· </span>Since 2006</span></span></p>
+      <h1 id="hero-title">Hindsight that becomes your <em>foresight.</em></h1>
+      <p class="lead">CommsPartner is a Melbourne advisory and investment group helping businesses buy, sell, reuse and grow, in Australia and into new markets.</p>
+      <div class="btns">
+        <a class="btn btn-primary" href="mailto:hello@commspartner.com">Talk to us</a>
+        <a class="btn btn-ghost" href="#services">See what we do</a>
+      </div>
+    </div>
+    <aside class="hero-card" aria-label="Founder's principle">
+      <div class="squares" aria-hidden="true"><span class="s-gold"></span><span class="s-green"></span><span class="s-berry"></span><span class="s-teal"></span></div>
+      <blockquote>“My hindsight becomes your foresight.”</blockquote>
+      <p class="who"><strong>Aid Rawlins</strong> · Founder, CommsPartner</p>
+      <dl>
+        <dt>For</dt><dd>Founders, MDs and boards of growing businesses</dd>
+        <dt>Also</dt><dd>Retailers, telcos, investors and overseas firms entering Australia</dd>
+      </dl>
+    </aside>
   </div>
 </section>
 
-<section id="itad">
+<!-- 3. Proof bar -->
+<section class="proof" id="advisory" aria-labelledby="proof-title">
   <div class="wrap">
-    <span class="kicker"></span>
-    <h2>ITAD - ITAM &amp; Secure Data Erasure</h2>
-    <p>CommsPartner manages APAC IT Asset Disposition (ITAD) and IT Asset Management (ITAM) directly and through our partners to deliver Secure Certified Asset Management:</p>
-    <ul class="ticks">
-      <li>Data Erasure – Data Shredding – Data Destruction.</li>
-      <li>Hard Drive HDD &amp; Solid State Drive SSD Destruction.</li>
-      <li>Corporate and SME IT and Smart Phone Disposal.</li>
-      <li>IT Asset Audit, Deployment, and Redeployment.</li>
-      <li>Ex-Lease Remanufacturing &amp; Remarketing.</li>
-      <li>IT and Phone Repairs for Reuse or Erasure Enablement.</li>
-    </ul>
-    <p>It Pays to Recycle through our IT Recycling Services – Quick and Easy; Simply Email an Approximate Equipment Inventory from which an anticipated value can then be established or guidance on safe disposal given. We then coordinate the collection logistics or onsite erasure if needed.</p>
-    <p>Once your equipment is received our team will complete a “Test and List Audit” where all inventory is inspected, tested, and listed into a confirmed Inventory Listing, and Sell Order quote is given for Erasure, and a Return or Sell Order completion at the confirmed value and terms.</p>
-    <p>Our IT recycling services allow you to increase the financial return on your original investment by selling your Working and Faulty end-of-life, or surplus devices. This includes business computer recycling, computer and laptop disposal services, Smartphone and Tablet recycling, as well as asset disposal and advice.</p>
-  </div>
-</section>
-
-<section id="contact-us">
-  <div class="wrap">
-    <span class="kicker"></span>
-    <h2>Contact Us</h2>
-    <div class="contact">
-      <a href="mailto:hello@commspartner.com">hello@commspartner.com</a>
-      <a href="tel:+61388490333">+61(0)388 490 333</a>
+    <div class="section-head">
+      <p class="eyebrow">Advisory</p>
+      <h2 id="proof-title">Advice from people who have built it, run it and grown it.</h2>
+    </div>
+    <div class="proof-grid">
+      <div class="stat" style="--c:var(--gold)"><span class="num">20 years</span><p>CommsPartner, advising and investing since 2006.</p></div>
+      <div class="stat" style="--c:var(--green)"><span class="num">15 years</span><p>Building and leading Mazuma Mobile Australia.</p></div>
+      <div class="stat" style="--c:var(--berry)"><span class="num">Award-winning</span><p>Mobile Industry Awards, Best Recycling Service 2022.</p></div>
+      <div class="stat" style="--c:var(--teal)"><span class="num">Licensed</span><p>Second-hand dealer and pawnbroker, Victoria.</p></div>
     </div>
   </div>
 </section>
 
-<footer><div class="wrap">©CommsPartner | hello@commspartner.com | PO Box 1005, Berwick, Victoria, 3806. Australia</div></footer>
+<!-- 4. Services -->
+<section class="services" id="services" aria-labelledby="services-title">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Services</p>
+      <h2 id="services-title">Six practical ways we help.</h2>
+      <p>Sanity, not vanity. Every piece of work is judged by what it changes in your business.</p>
+    </div>
+    <div class="card-grid">
+      <article class="card c-gold">
+        <span class="idx">01</span>
+        <h3>Advisory, mentoring and boards</h3>
+        <p>For founders, MDs and boards. Mentoring, non-executive and board-level services from someone who has sat in your chair.</p>
+        <p class="quote">“My hindsight becomes your foresight.”</p>
+      </article>
+      <article class="card c-green">
+        <span class="idx">02</span>
+        <h3>Buy-back and trade-in programmes</h3>
+        <p>We design, launch and run buy-back and trade-in programmes for retailers, telcos and brands.</p>
+        <p>Built on 15 years leading the sector in Australia.</p>
+      </article>
+      <article class="card c-berry">
+        <span class="idx">03</span>
+        <h3>IntoAU market entry</h3>
+        <p>IntoAU helps overseas businesses enter Australia with low risk and low investment.</p>
+        <p>Territory and channel management, market research, launch and local representation.</p>
+      </article>
+      <article class="card c-teal">
+        <span class="idx">04</span>
+        <h3>IT asset disposition and secure data erasure</h3>
+        <p>Through trusted partners: certified data erasure, device disposal and remarketing, and IT asset audits.</p>
+        <p>Value back from equipment you no longer need.</p>
+      </article>
+      <article class="card c-gold">
+        <span class="idx">05</span>
+        <h3>Resilience and continuity</h3>
+        <p>Security, risk and business continuity advice for businesses and key executives.</p>
+        <p>Plan for the bad day before it arrives.</p>
+      </article>
+      <article class="card c-green">
+        <span class="idx">06</span>
+        <h3>eCommerce and marketplaces</h3>
+        <p>Building and running online stores and marketplace channels.</p>
+        <p>Practical set-up and day-to-day operation, focused on sales.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 5. How we work -->
+<section class="how" id="how" aria-labelledby="how-title">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">How we work</p>
+      <h2 id="how-title">Four steps, in the right order.</h2>
+    </div>
+    <ol class="steps">
+      <li class="step" style="--c:var(--gold)"><span class="dot" aria-hidden="true">1</span><div><h3>Listen and audit</h3><p>Understand your business, your numbers and what you actually want.</p></div></li>
+      <li class="step" style="--c:var(--green)"><span class="dot" aria-hidden="true">2</span><div><h3>Plan</h3><p>Walk in the right direction before you run.</p></div></li>
+      <li class="step" style="--c:var(--berry)"><span class="dot" aria-hidden="true">3</span><div><h3>Launch</h3><p>Put the plan to work with the right people, partners and timing.</p></div></li>
+      <li class="step" style="--c:var(--teal)"><span class="dot" aria-hidden="true">4</span><div><h3>Level up</h3><p>Review what is working, refine it and grow from there.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- 6. Founder -->
+<section class="founder" id="founder" aria-labelledby="founder-title">
+  <div class="wrap founder-grid founder-solo">
+    <figure class="passport"><img src="aid-rawlins.jpg" alt="Aid Rawlins" width="176" height="220" loading="lazy"></figure>
+    <div>
+      <p class="eyebrow">Founder</p>
+      <h2 id="founder-title">Aid Rawlins</h2>
+      <p class="role">Founder, CommsPartner</p>
+      <div class="bio">
+        <p>Aid founded CommsPartner in 2006. From 2009 to 2024 he built, launched and led Mazuma Mobile Australia, pioneering phone buy-back in Australia and taking the business to market leadership.</p>
+        <p>Earlier, as a director of GEOS Alliance, he helped build an international emergency response coordination centre, later acquired by Garmin. Today he works as a mentor, non-executive and investor across technology, reuse and eCommerce businesses.</p>
+      </div>
+      <blockquote class="pull">
+        <p>“Act like, operate like and look like a bigger, more organised business, and one day you’ll look over your shoulder and find you are one.”</p>
+        <cite>Aid Rawlins</cite>
+      </blockquote>
+      <ul class="creds">
+        <li style="--c:var(--gold)"><strong>Mobile Industry Awards</strong>Mazuma: Best Recycling Service 2022.</li>
+        <li style="--c:var(--green)"><strong>Mobile News Awards</strong>Mazuma: 2014, 2015 and 2016, including Best Customer Service 2016.</li>
+        <li style="--c:var(--berry)"><strong>Arnold Schwarzenegger</strong>Recognised for sustainability efforts.</li>
+        <li style="--c:var(--teal)"><strong>HRH King Charles</strong>Special mention, as Prince of Wales, for creating wealth from perceived waste.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 7. Ethos -->
+<section class="ethos on-navy" aria-labelledby="ethos-title">
+  <div class="wrap ethos-grid">
+    <div>
+      <p class="eyebrow">Our ethos</p>
+      <h2 id="ethos-title">Doing good while doing business.</h2>
+    </div>
+    <div>
+      <p>Good business and sustainability are not opposites. Reuse returns value from what people thought was waste.</p>
+      <p>The Japanese have a word for the regret of waste: <span class="jp" lang="ja-Latn">mottainai</span>. We build businesses that avoid it.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 8. Brands -->
+<section class="brands" id="brands" aria-labelledby="brands-title">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Our brands</p>
+      <h2 id="brands-title">Consumer brands in the group.</h2>
+    </div>
+    <div class="brand-grid">
+      <a class="brand-card" href="https://cutpricegadgets.com" style="--c:var(--gold)">
+        <div>
+          <h3>Cut Price Gadgets</h3>
+          <p>Real gadgets, cut prices, delivered Australia-wide.</p>
+        </div>
+        <span class="go">cutpricegadgets.com <span aria-hidden="true">→</span></span>
+      </a>
+      <a class="brand-card" href="https://bestcasescenario.mobi" style="--c:var(--teal)">
+        <div>
+          <h3>Best Case Scenario</h3>
+          <p>Phone protection that doesn’t cost the earth.</p>
+        </div>
+        <span class="go">bestcasescenario.mobi <span aria-hidden="true">→</span></span>
+      </a>
+    </div>
+    <p class="more">More brands in the group are on the way.</p>
+  </div>
+</section>
+
+<!-- 9. In the media -->
+<section class="media" id="media" aria-labelledby="media-title">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">In the media</p>
+      <h2 id="media-title">From the Mazuma years.</h2>
+    </div>
+    <div class="media-grid">
+      <article class="media-card">
+        <p class="type">Podcast</p>
+        <h3>Talking Business with Alan Kohler</h3>
+        <p>Aid Rawlins, Managing Director, Mazuma Mobile Australia.</p>
+        <a class="more-link" href="https://podcasts.apple.com/au/podcast/aid-rawlins-managing-director-mazuma-mobile-australia/id1176399568?i=1000467125837">Listen on Apple Podcasts</a>
+      </article>
+      <article class="media-card">
+        <p class="type">Article</p>
+        <h3>Giving mobile phones another life</h3>
+        <p>Sustainability Matters.</p>
+        <a class="more-link" href="https://www.sustainabilitymatters.net.au/content/waste/news/giving-mobile-phones-another-life-1185655600">Read the article</a>
+      </article>
+      <article class="media-card">
+        <p class="type">Television</p>
+        <h3>Featured on Channel 7’s Sunrise</h3>
+        <p>National breakfast television.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 10. Contact -->
+<section class="contact on-navy" id="contact" aria-labelledby="contact-title">
+  <div class="wrap contact-grid">
+    <div>
+      <p class="eyebrow">Contact</p>
+      <h2 id="contact-title">Tell us what you’re working on.</h2>
+      <p class="lead">We’ll tell you honestly whether we can help.</p>
+      <a class="btn btn-primary" href="mailto:hello@commspartner.com">Email us</a>
+    </div>
+    <ul class="contact-list">
+      <li><span class="k">Email</span><a href="mailto:hello@commspartner.com">hello@commspartner.com</a></li>
+      <li><span class="k">Phone</span><a href="tel:+61388490333">+61 3 8849 0333</a></li>
+      <li><span class="k">Post</span><span class="v">PO Box 1005, Berwick VIC 3806</span></li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer on-navy">
+  <div class="wrap">
+    <p>© 2026 CommsPartner Pty Ltd ATF Rawlins Family Trust · ABN 25 598 675 986 · Melbourne, Australia</p>
+    <div class="squares" aria-hidden="true"><span class="s-gold"></span><span class="s-green"></span><span class="s-berry"></span><span class="s-teal"></span></div>
+  </div>
+</footer>
+
+<script>
+/* Closes the phone menu after a link is chosen. The page works without it. */
+document.querySelectorAll('.nav-toggle a').forEach(function(a){a.addEventListener('click',function(){a.closest('details').removeAttribute('open');});});
+</script>
 </body>
 </html>

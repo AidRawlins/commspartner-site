@@ -289,13 +289,16 @@ section{scroll-margin-top:84px}
 .f1{stroke:var(--gold)}.f2{stroke:var(--teal);animation-delay:-4.5s}
 @keyframes flow{from{stroke-dashoffset:0}to{stroke-dashoffset:-1000}}
 .ticker{display:block;overflow:hidden;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:18px 0;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
-.track{display:inline-flex;gap:18px;white-space:nowrap;animation:ticker 45s linear infinite;font:600 18px/1.2 var(--sans);color:var(--ink)}
+.track{display:inline-flex;white-space:nowrap;animation:ticker 45s linear infinite;font:600 18px/1.2 var(--sans);color:var(--ink)}
+.set{display:inline-flex;align-items:center;gap:18px;padding-right:18px}
+.set::after{content:"·";color:var(--brass)}
+.and{font-weight:500;color:var(--slate)}
 .track i{font-style:normal;color:var(--brass)}
 @keyframes ticker{to{transform:translateX(-50%)}}
 .brands .more a{color:var(--ink);font-weight:600;text-underline-offset:4px}
 @media (max-width:900px){.groups{grid-template-columns:1fr;max-width:640px}}
 @media (max-width:640px){.loop{max-width:100%}.team-quote{padding-left:20px}.group{padding:26px 22px 8px}}
-@media (prefers-reduced-motion:reduce){.track{animation:none;flex-wrap:wrap;white-space:normal}.flow{animation:none}}
+@media (prefers-reduced-motion:reduce){.ticker{-webkit-mask-image:none;mask-image:none}.track{display:block;animation:none;white-space:normal;text-align:center}.set{display:flex;flex-wrap:wrap;justify-content:center;gap:12px 30px;padding:0}.set::after{content:none}.set i{display:none}.dup{display:none}.flow{display:none}}
 </style>
 </head>
 <body>
@@ -471,7 +474,7 @@ section{scroll-margin-top:84px}
       <p class="eyebrow">Group brands</p>
       <h2 id="brands-title">One group. Many brands. Full circle.</h2>
     </div>
-    <ul class="sr-only"><li>Cut Price Gadgets</li><li>Best Case Scenario</li><li>Worth Entering</li><li>IntoAU</li><li>CommsPartner</li><li>Gravel &amp; Gum</li><li>SellMyPhone</li><li>PhoneTradeIn</li><li>ITAD Worldwide</li><li>ITAM Australia</li><li>&amp; More</li></ul>
+    <ul class="sr-only"><li>Cut Price Gadgets</li><li>Best Case Scenario</li><li>Worth Entering</li><li>IntoAU</li><li>CommsPartner</li><li>Gravel &amp; Gum</li><li>SellMyPhone</li><li>PhoneTradeIn</li><li>ITAD Worldwide</li><li>ITAD Australia</li><li>&amp; More</li></ul>
     <div class="loop" aria-hidden="true">
       <svg viewBox="0 0 1000 380" role="presentation" focusable="false">
         <defs>
@@ -485,7 +488,7 @@ section{scroll-margin-top:84px}
         <path class="flow f2" pathLength="1000" d="M500,190 C590,70 860,50 860,190 C860,330 590,310 500,190 C410,70 140,50 140,190 C140,330 410,310 500,190 Z"/>
       </svg>
     </div>
-    <div class="ticker" aria-hidden="true"><div class="track"><span>Cut Price Gadgets</span><i aria-hidden="true">·</i><span>Best Case Scenario</span><i aria-hidden="true">·</i><span>Worth Entering</span><i aria-hidden="true">·</i><span>IntoAU</span><i aria-hidden="true">·</i><span>CommsPartner</span><i aria-hidden="true">·</i><span>Gravel &amp; Gum</span><i aria-hidden="true">·</i><span>SellMyPhone</span><i aria-hidden="true">·</i><span>PhoneTradeIn</span><i aria-hidden="true">·</i><span>ITAD Worldwide</span><i aria-hidden="true">·</i><span>ITAM Australia</span><i aria-hidden="true">·</i><span>&amp; More</span><i aria-hidden="true">·</i><span>Cut Price Gadgets</span><i aria-hidden="true">·</i><span>Best Case Scenario</span><i aria-hidden="true">·</i><span>Worth Entering</span><i aria-hidden="true">·</i><span>IntoAU</span><i aria-hidden="true">·</i><span>CommsPartner</span><i aria-hidden="true">·</i><span>Gravel &amp; Gum</span><i aria-hidden="true">·</i><span>SellMyPhone</span><i aria-hidden="true">·</i><span>PhoneTradeIn</span><i aria-hidden="true">·</i><span>ITAD Worldwide</span><i aria-hidden="true">·</i><span>ITAM Australia</span><i aria-hidden="true">·</i><span>&amp; More</span><i aria-hidden="true">·</i></div></div>
+    <div class="ticker" aria-hidden="true"><div class="track"><div class="set"><span>Cut Price Gadgets</span><i aria-hidden="true">·</i><span>Best Case Scenario</span><i aria-hidden="true">·</i><span>Worth Entering</span><i aria-hidden="true">·</i><span>IntoAU</span><i aria-hidden="true">·</i><span>CommsPartner</span><i aria-hidden="true">·</i><span>Gravel &amp; Gum</span><i aria-hidden="true">·</i><span>SellMyPhone</span><i aria-hidden="true">·</i><span>PhoneTradeIn</span><i aria-hidden="true">·</i><span>ITAD Worldwide</span><i aria-hidden="true">·</i><span>ITAD Australia</span><i aria-hidden="true">·</i><span class="and">and more</span></div><div class="set dup"><span>Cut Price Gadgets</span><i aria-hidden="true">·</i><span>Best Case Scenario</span><i aria-hidden="true">·</i><span>Worth Entering</span><i aria-hidden="true">·</i><span>IntoAU</span><i aria-hidden="true">·</i><span>CommsPartner</span><i aria-hidden="true">·</i><span>Gravel &amp; Gum</span><i aria-hidden="true">·</i><span>SellMyPhone</span><i aria-hidden="true">·</i><span>PhoneTradeIn</span><i aria-hidden="true">·</i><span>ITAD Worldwide</span><i aria-hidden="true">·</i><span>ITAD Australia</span><i aria-hidden="true">·</i><span class="and">and more</span></div></div></div>
     <p class="more">Visit <a href="https://cutpricegadgets.com">Cut Price Gadgets</a> and <a href="https://bestcasescenario.mobi">Best Case Scenario</a>.</p>
   </div>
 </section>

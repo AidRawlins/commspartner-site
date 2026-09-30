@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CommsPartner | Melbourne advisory and investment group</title>
-<meta name="description" content="CommsPartner is a Melbourne advisory and investment group, founded in 2006, helping businesses buy, sell, reuse and grow in Australia and into new markets.">
+<title>CommsPartner | Melbourne based, global advisory and investment group</title>
+<meta name="description" content="CommsPartner is a Melbourne based, global advisory and investment group, founded in 2006, helping businesses buy, sell, reuse and grow in Australia and into new markets.">
 <link rel="canonical" href="https://commspartner.com/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="CommsPartner">
@@ -271,6 +271,31 @@ section{scroll-margin-top:84px}
 .passport{margin:8px 0 0;width:176px}
 .passport img{display:block;width:176px;height:220px;object-fit:cover;border-radius:6px;border:1px solid var(--line);background:#fff}
 @media (max-width:760px){.founder-solo{grid-template-columns:1fr;gap:24px}.passport{width:120px}.passport img{width:120px;height:150px}}
+
+.hero-card .card-title{font:400 italic 26px/1.3 var(--serif);color:var(--on-navy);margin:0}
+.hero-card .card-title + dl{margin-top:20px}
+.team-quote{margin:0 0 44px;padding:4px 0 4px 28px;border-left:3px solid var(--brass);max-width:760px}
+.team-quote p{font:400 italic clamp(26px,3vw,38px)/1.25 var(--serif);color:var(--ink);margin:0}
+.groups{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.group{background:var(--white);border-radius:var(--radius);border-top:4px solid var(--c);padding:30px 28px 12px;box-shadow:0 1px 2px rgba(20,36,51,.05),0 8px 24px -12px rgba(20,36,51,.12)}
+.group h3{font-size:24px;line-height:1.2;margin-bottom:10px}
+.svc{padding:18px 0;border-top:1px solid var(--line)}
+.svc h4{font:600 16px/1.35 var(--sans);color:var(--ink);margin:0 0 6px}
+.svc p{font-size:15.5px;line-height:1.55;margin:0}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.loop{max-width:620px;margin:0 auto 28px}
+.loop svg{display:block;width:100%;height:auto}
+.flow{fill:none;stroke-width:8;stroke-linecap:round;stroke-dasharray:90 910;animation:flow 9s linear infinite}
+.f1{stroke:var(--gold)}.f2{stroke:var(--teal);animation-delay:-4.5s}
+@keyframes flow{from{stroke-dashoffset:0}to{stroke-dashoffset:-1000}}
+.ticker{display:block;overflow:hidden;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:18px 0;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.track{display:inline-flex;gap:18px;white-space:nowrap;animation:ticker 45s linear infinite;font:600 18px/1.2 var(--sans);color:var(--ink)}
+.track i{font-style:normal;color:var(--brass)}
+@keyframes ticker{to{transform:translateX(-50%)}}
+.brands .more a{color:var(--ink);font-weight:600;text-underline-offset:4px}
+@media (max-width:900px){.groups{grid-template-columns:1fr;max-width:640px}}
+@media (max-width:640px){.loop{max-width:100%}.team-quote{padding-left:20px}.group{padding:26px 22px 8px}}
+@media (prefers-reduced-motion:reduce){.track{animation:none;flex-wrap:wrap;white-space:normal}.flow{animation:none}}
 </style>
 </head>
 <body>
@@ -281,11 +306,10 @@ section{scroll-margin-top:84px}
     <a class="brand" href="#top" aria-label="CommsPartner, back to top"><img src="commspartner-logo.png" alt="CommsPartner" width="634" height="76"></a>
     <nav class="nav-desktop" aria-label="Main">
       <ul class="nav-list">
-        <li><a href="#advisory">Advisory</a></li>
-        <li><a href="#services">Services</a></li>
+        <li><a href="#services">What we do</a></li>
         <li><a href="#how">How we work</a></li>
         <li><a href="#founder">Founder</a></li>
-        <li><a href="#brands">Brands</a></li>
+        <li><a href="#brands">Group brands</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -293,11 +317,10 @@ section{scroll-margin-top:84px}
       <summary aria-label="Menu"><span class="bars" aria-hidden="true"><i></i><i></i><i></i></span>Menu</summary>
       <nav aria-label="Main (mobile)">
         <ul class="nav-list">
-          <li><a href="#advisory">Advisory</a></li>
-          <li><a href="#services">Services</a></li>
+          <li><a href="#services">What we do</a></li>
           <li><a href="#how">How we work</a></li>
           <li><a href="#founder">Founder</a></li>
-          <li><a href="#brands">Brands</a></li>
+          <li><a href="#brands">Group brands</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -312,21 +335,22 @@ section{scroll-margin-top:84px}
 <section class="hero on-navy" id="top" aria-labelledby="hero-title">
   <div class="wrap hero-grid">
     <div>
-      <p class="eyebrow"><span>Melbourne advisory group <span class="nw"><span class="sep">· </span>Since 2006</span></span></p>
+      <p class="eyebrow"><span>Melbourne based · Globally connected · Advisory group · Since 2006</span></p>
       <h1 id="hero-title">Hindsight that becomes your <em>foresight.</em></h1>
-      <p class="lead">CommsPartner is a Melbourne advisory and investment group helping businesses buy, sell, reuse and grow, in Australia and into new markets.</p>
+      <p class="lead">CommsPartner is a Melbourne based, global advisory and investment group helping businesses buy, sell, reuse and grow, in Australia and into new markets.</p>
       <div class="btns">
-        <a class="btn btn-primary" href="mailto:hello@commspartner.com">Talk to us</a>
+        <a class="btn btn-primary" href="#contact">Talk to us</a>
         <a class="btn btn-ghost" href="#services">See what we do</a>
       </div>
     </div>
-    <aside class="hero-card" aria-label="Founder's principle">
+    <aside class="hero-card" aria-label="Who we work with">
       <div class="squares" aria-hidden="true"><span class="s-gold"></span><span class="s-green"></span><span class="s-berry"></span><span class="s-teal"></span></div>
-      <blockquote>“My hindsight becomes your foresight.”</blockquote>
-      <p class="who"><strong>Aid Rawlins</strong> · Founder, CommsPartner</p>
+      <p class="card-title">Who we work with</p>
       <dl>
-        <dt>For</dt><dd>Founders, MDs and boards of growing businesses</dd>
-        <dt>Also</dt><dd>Retailers, telcos, investors and overseas firms entering Australia</dd>
+        <dt>Grow</dt><dd>Founders, MDs and boards of growing businesses</dd>
+        <dt>Enter</dt><dd>Overseas firms entering Australia and Asia-Pacific</dd>
+        <dt>Invest</dt><dd>Investors, acquirers and start-ups</dd>
+        <dt>Recover</dt><dd>Retailers, telcos and brands recovering value from devices</dd>
       </dl>
     </aside>
   </div>
@@ -336,62 +360,48 @@ section{scroll-margin-top:84px}
 <section class="proof" id="advisory" aria-labelledby="proof-title">
   <div class="wrap">
     <div class="section-head">
-      <p class="eyebrow">Advisory</p>
+      <p class="eyebrow">Why us</p>
       <h2 id="proof-title">Advice from people who have built it, run it and grown it.</h2>
     </div>
+    <blockquote class="team-quote"><p>“Our hindsight becomes your foresight.”</p></blockquote>
     <div class="proof-grid">
       <div class="stat" style="--c:var(--gold)"><span class="num">20 years</span><p>CommsPartner, advising and investing since 2006.</p></div>
       <div class="stat" style="--c:var(--green)"><span class="num">15 years</span><p>Building and leading Mazuma Mobile Australia.</p></div>
-      <div class="stat" style="--c:var(--berry)"><span class="num">Award-winning</span><p>Mobile Industry Awards, Best Recycling Service 2022.</p></div>
+      <div class="stat" style="--c:var(--berry)"><span class="num">Multi-award</span><p>Winning team behind brand growth and sector recognition, year after year.</p></div>
       <div class="stat" style="--c:var(--teal)"><span class="num">Licensed</span><p>Second-hand dealer and pawnbroker, Victoria.</p></div>
     </div>
   </div>
 </section>
 
-<!-- 4. Services -->
+<!-- 4. Advisory and services -->
 <section class="services" id="services" aria-labelledby="services-title">
   <div class="wrap">
     <div class="section-head">
-      <p class="eyebrow">Services</p>
-      <h2 id="services-title">Six practical ways we help.</h2>
-      <p>Sanity, not vanity. Every piece of work is judged by what it changes in your business.</p>
+      <p class="eyebrow">Advisory and services</p>
+      <h2 id="services-title">Advice and delivery, together.</h2>
+      <p>One usually needs the other. Sanity, not vanity: every piece of work is judged by what it changes in your business.</p>
     </div>
-    <div class="card-grid">
-      <article class="card c-gold">
-        <span class="idx">01</span>
-        <h3>Advisory, mentoring and boards</h3>
-        <p>For founders, MDs and boards. Mentoring, non-executive and board-level services from someone who has sat in your chair.</p>
-        <p class="quote">“My hindsight becomes your foresight.”</p>
+    <div class="groups">
+      <article class="group" style="--c:var(--gold)">
+        <h3>Build and grow</h3>
+          <div class="svc"><h4>Advisory, mentoring and boards</h4><p>Mentoring, non-executive and board-level support for founders and MDs.</p></div>
+          <div class="svc"><h4>Start-up, level up and exit</h4><p>Working through growing pains, judgement calls and exit strategies.</p></div>
+          <div class="svc"><h4>Business acquisition</h4><p>Investor advisory, target audits, due diligence and negotiation.</p></div>
+          <div class="svc"><h4>Business methodologies</h4><p>Six Sigma, Ansoff and RACI (who is Responsible, Accountable, Consulted and Informed), applied plainly.</p></div>
       </article>
-      <article class="card c-green">
-        <span class="idx">02</span>
-        <h3>Buy-back and trade-in programmes</h3>
-        <p>We design, launch and run buy-back and trade-in programmes for retailers, telcos and brands.</p>
-        <p>Built on 15 years leading the sector in Australia.</p>
+      <article class="group" style="--c:var(--berry)">
+        <h3>Enter and launch</h3>
+          <div class="svc"><h4>IntoAU territory management</h4><p>Market research, early adopters, in-territory compliance and executive board members.</p></div>
+          <div class="svc"><h4>Media management</h4><p>Media training, conflict mediation, keynote and interview speakers.</p></div>
+          <div class="svc"><h4>Product and software development</h4><p>Development, testing, accreditation and compliance.</p></div>
+          <div class="svc"><h4>eCommerce and marketplaces</h4><p>Building and running online stores and marketplace channels.</p></div>
       </article>
-      <article class="card c-berry">
-        <span class="idx">03</span>
-        <h3>IntoAU market entry</h3>
-        <p>IntoAU helps overseas businesses enter Australia with low risk and low investment.</p>
-        <p>Territory and channel management, market research, launch and local representation.</p>
-      </article>
-      <article class="card c-teal">
-        <span class="idx">04</span>
-        <h3>IT asset disposition and secure data erasure</h3>
-        <p>Through trusted partners: certified data erasure, device disposal and remarketing, and IT asset audits.</p>
-        <p>Value back from equipment you no longer need.</p>
-      </article>
-      <article class="card c-gold">
-        <span class="idx">05</span>
-        <h3>Resilience and continuity</h3>
-        <p>Security, risk and business continuity advice for businesses and key executives.</p>
-        <p>Plan for the bad day before it arrives.</p>
-      </article>
-      <article class="card c-green">
-        <span class="idx">06</span>
-        <h3>eCommerce and marketplaces</h3>
-        <p>Building and running online stores and marketplace channels.</p>
-        <p>Practical set-up and day-to-day operation, focused on sales.</p>
+      <article class="group" style="--c:var(--teal)">
+        <h3>Protect and recirculate</h3>
+          <div class="svc"><h4>Business continuity</h4><p>Protecting people, brands, assets and the bottom line.</p></div>
+          <div class="svc"><h4>Buy-back and trade-in programmes</h4><p>Designed, launched and run for retailers, telcos and brands.</p></div>
+          <div class="svc"><h4>IT asset disposition and management</h4><p>Certified data erasure, disposal, remarketing and audits, through trusted partners.</p></div>
+          <div class="svc"><h4>Warranty and product lifecycle</h4><p>Extended warranty and lifecycle programmes that keep products earning for longer.</p></div>
       </article>
     </div>
   </div>
@@ -430,8 +440,8 @@ section{scroll-margin-top:84px}
         <cite>Aid Rawlins</cite>
       </blockquote>
       <ul class="creds">
-        <li style="--c:var(--gold)"><strong>Mobile Industry Awards</strong>Mazuma: Best Recycling Service 2022.</li>
-        <li style="--c:var(--green)"><strong>Mobile News Awards</strong>Mazuma: 2014, 2015 and 2016, including Best Customer Service 2016.</li>
+        <li style="--c:var(--gold)"><strong>Industry awards, year after year</strong>With Mazuma, including Mobile Industry Awards Best Recycling Service 2022.</li>
+        <li style="--c:var(--green)"><strong>Mobile News Awards</strong>Mazuma: 2014, 2015 and 2016, including Best Customer Service.</li>
         <li style="--c:var(--berry)"><strong>Arnold Schwarzenegger</strong>Recognised for sustainability efforts.</li>
         <li style="--c:var(--teal)"><strong>HRH King Charles</strong>Special mention, as Prince of Wales, for creating wealth from perceived waste.</li>
       </ul>
@@ -447,36 +457,36 @@ section{scroll-margin-top:84px}
       <h2 id="ethos-title">Doing good while doing business.</h2>
     </div>
     <div>
-      <p>Good business and sustainability are not opposites. Reuse returns value from what people thought was waste.</p>
-      <p>The Japanese have a word for the regret of waste: <span class="jp" lang="ja-Latn">mottainai</span>. We build businesses that avoid it.</p>
+      <p>Good business and sustainability are not opposites.</p>
+      <p><span class="jp" lang="ja-Latn">Mottainai</span> (<span lang="ja">もったいない</span>) is a Japanese expression meaning “What a waste!” or “Waste not, want not”. It carries a real regret at wasting, misusing or failing to appreciate the full value of resources, objects, time or talent.</p>
+      <p>It is the thinking behind everything we do: find the value others overlook, and put it back to work.</p>
     </div>
   </div>
 </section>
 
-<!-- 8. Brands -->
+<!-- 8. Group brands -->
 <section class="brands" id="brands" aria-labelledby="brands-title">
   <div class="wrap">
     <div class="section-head">
-      <p class="eyebrow">Our brands</p>
-      <h2 id="brands-title">Consumer brands in the group.</h2>
+      <p class="eyebrow">Group brands</p>
+      <h2 id="brands-title">One group. Many brands. Full circle.</h2>
     </div>
-    <div class="brand-grid">
-      <a class="brand-card" href="https://cutpricegadgets.com" style="--c:var(--gold)">
-        <div>
-          <h3>Cut Price Gadgets</h3>
-          <p>Real gadgets, cut prices, delivered Australia-wide.</p>
-        </div>
-        <span class="go">cutpricegadgets.com <span aria-hidden="true">→</span></span>
-      </a>
-      <a class="brand-card" href="https://bestcasescenario.mobi" style="--c:var(--teal)">
-        <div>
-          <h3>Best Case Scenario</h3>
-          <p>Phone protection that doesn’t cost the earth.</p>
-        </div>
-        <span class="go">bestcasescenario.mobi <span aria-hidden="true">→</span></span>
-      </a>
+    <ul class="sr-only"><li>Cut Price Gadgets</li><li>Best Case Scenario</li><li>Worth Entering</li><li>IntoAU</li><li>CommsPartner</li><li>Gravel &amp; Gum</li><li>SellMyPhone</li><li>PhoneTradeIn</li><li>ITAD Worldwide</li><li>ITAM Australia</li><li>&amp; More</li></ul>
+    <div class="loop" aria-hidden="true">
+      <svg viewBox="0 0 1000 380" role="presentation" focusable="false">
+        <defs>
+          <linearGradient id="band" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stop-color="#e1a100"/><stop offset=".33" stop-color="#87ab41"/><stop offset=".66" stop-color="#a04e5a"/><stop offset="1" stop-color="#439eb1"/>
+          </linearGradient>
+          <path id="loop-path" d="M500,190 C590,70 860,50 860,190 C860,330 590,310 500,190 C410,70 140,50 140,190 C140,330 410,310 500,190 Z"/>
+        </defs>
+        <use href="#loop-path" fill="none" stroke="url(#band)" stroke-opacity=".18" stroke-width="46" stroke-linejoin="round"/>
+        <path class="flow f1" pathLength="1000" d="M500,190 C590,70 860,50 860,190 C860,330 590,310 500,190 C410,70 140,50 140,190 C140,330 410,310 500,190 Z"/>
+        <path class="flow f2" pathLength="1000" d="M500,190 C590,70 860,50 860,190 C860,330 590,310 500,190 C410,70 140,50 140,190 C140,330 410,310 500,190 Z"/>
+      </svg>
     </div>
-    <p class="more">More brands in the group are on the way.</p>
+    <div class="ticker" aria-hidden="true"><div class="track"><span>Cut Price Gadgets</span><i aria-hidden="true">·</i><span>Best Case Scenario</span><i aria-hidden="true">·</i><span>Worth Entering</span><i aria-hidden="true">·</i><span>IntoAU</span><i aria-hidden="true">·</i><span>CommsPartner</span><i aria-hidden="true">·</i><span>Gravel &amp; Gum</span><i aria-hidden="true">·</i><span>SellMyPhone</span><i aria-hidden="true">·</i><span>PhoneTradeIn</span><i aria-hidden="true">·</i><span>ITAD Worldwide</span><i aria-hidden="true">·</i><span>ITAM Australia</span><i aria-hidden="true">·</i><span>&amp; More</span><i aria-hidden="true">·</i><span>Cut Price Gadgets</span><i aria-hidden="true">·</i><span>Best Case Scenario</span><i aria-hidden="true">·</i><span>Worth Entering</span><i aria-hidden="true">·</i><span>IntoAU</span><i aria-hidden="true">·</i><span>CommsPartner</span><i aria-hidden="true">·</i><span>Gravel &amp; Gum</span><i aria-hidden="true">·</i><span>SellMyPhone</span><i aria-hidden="true">·</i><span>PhoneTradeIn</span><i aria-hidden="true">·</i><span>ITAD Worldwide</span><i aria-hidden="true">·</i><span>ITAM Australia</span><i aria-hidden="true">·</i><span>&amp; More</span><i aria-hidden="true">·</i></div></div>
+    <p class="more">Visit <a href="https://cutpricegadgets.com">Cut Price Gadgets</a> and <a href="https://bestcasescenario.mobi">Best Case Scenario</a>.</p>
   </div>
 </section>
 

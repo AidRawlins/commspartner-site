@@ -294,6 +294,18 @@ section{scroll-margin-top:84px}
 .set::after{content:"·";color:var(--brass)}
 .and{font-weight:500;color:var(--slate)}
 .track i{font-style:normal;color:var(--brass)}
+
+/* Brand logo links (IT-REQ-MKT-008) */
+.logos{list-style:none;margin:40px 0 8px;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.logos li{margin:0}
+.logo-link{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;min-height:190px;padding:24px 18px 20px;border-radius:var(--radius);background:var(--white);border:1px solid var(--line);text-decoration:none;color:var(--ink);text-align:center;transition:border-color .15s,transform .15s,box-shadow .15s}
+a.logo-link:hover,a.logo-link:focus-visible{border-color:#cfc8b8;transform:translateY(-2px);box-shadow:0 14px 30px -18px rgba(20,36,51,.3)}
+.logo-link img{display:block;height:84px;width:auto;max-width:100%;object-fit:contain}
+.logo-link .txt{display:flex;flex-direction:column;gap:4px}.logo-link .nm{font-weight:600;font-size:16px}
+.logo-link .tag{font-size:14px;color:var(--slate)}
+.logo-link.soon{background:var(--paper);border-style:dashed}
+.logo-link.soon .word{font-family:var(--serif);font-size:26px;line-height:1.1}
+@media (max-width:760px){.logos{grid-template-columns:1fr;gap:14px}.logo-link{min-height:0;flex-direction:row;justify-content:flex-start;text-align:left;gap:18px;padding:16px 18px}.logo-link img{height:56px;width:auto;flex:none}.logo-link .txt{display:flex;flex-direction:column}}
 @keyframes ticker{to{transform:translateX(-50%)}}
 .brands .more a{color:var(--ink);font-weight:600;text-underline-offset:4px}
 @media (max-width:900px){.groups{grid-template-columns:1fr;max-width:640px}}
@@ -488,6 +500,11 @@ section{scroll-margin-top:84px}
         <path class="flow f2" pathLength="1000" d="M500,190 C590,70 860,50 860,190 C860,330 590,310 500,190 C410,70 140,50 140,190 C140,330 410,310 500,190 Z"/>
       </svg>
     </div>
+    <ul class="logos" aria-label="Visit our brands">
+      <li><a class="logo-link" href="https://cutpricegadgets.com" aria-label="Visit Cut Price Gadgets"><img src="cpg-logo.png" alt="Cut Price Gadgets logo" width="600" height="405" loading="lazy"><span class="txt"><span class="nm">Cut Price Gadgets</span><span class="tag">Real gadgets. Cut prices.</span></span></a></li>
+      <li><a class="logo-link" href="https://worthentering.com" aria-label="Visit Worth Entering"><img src="door-icon.svg" alt="Worth Entering app icon: a ticket with a tick" width="512" height="512" loading="lazy"><span class="txt"><span class="nm">Worth Entering</span><span class="tag">Competitions worth your time</span></span></a></li>
+      <li><div class="logo-link"><img src="gg-logo.png" alt="Gravel &amp; Gum logo: a gum leaf and a winding track in a green circle" width="440" height="440" loading="lazy"><span class="txt"><span class="nm">Gravel &amp; Gum</span><span class="tag">Launching soon</span></span></div></li>
+    </ul>
     <div class="ticker" aria-hidden="true"><div class="track"><div class="set"><span>Cut Price Gadgets</span><i aria-hidden="true">·</i><span>Best Case Scenario</span><i aria-hidden="true">·</i><span>Worth Entering</span><i aria-hidden="true">·</i><span>IntoAU</span><i aria-hidden="true">·</i><span>CommsPartner</span><i aria-hidden="true">·</i><span>Gravel &amp; Gum</span><i aria-hidden="true">·</i><span>SellMyPhone</span><i aria-hidden="true">·</i><span>PhoneTradeIn</span><i aria-hidden="true">·</i><span>ITAD Worldwide</span><i aria-hidden="true">·</i><span>ITAD Australia</span><i aria-hidden="true">·</i><span class="and">and more</span></div><div class="set dup"><span>Cut Price Gadgets</span><i aria-hidden="true">·</i><span>Best Case Scenario</span><i aria-hidden="true">·</i><span>Worth Entering</span><i aria-hidden="true">·</i><span>IntoAU</span><i aria-hidden="true">·</i><span>CommsPartner</span><i aria-hidden="true">·</i><span>Gravel &amp; Gum</span><i aria-hidden="true">·</i><span>SellMyPhone</span><i aria-hidden="true">·</i><span>PhoneTradeIn</span><i aria-hidden="true">·</i><span>ITAD Worldwide</span><i aria-hidden="true">·</i><span>ITAD Australia</span><i aria-hidden="true">·</i><span class="and">and more</span></div></div></div>
     <p class="more">Visit <a href="https://cutpricegadgets.com">Cut Price Gadgets</a> and <a href="https://bestcasescenario.mobi">Best Case Scenario</a>.</p>
   </div>
